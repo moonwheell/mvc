@@ -1,7 +1,5 @@
 <?php
 
-echo 'DB.php';
-
 class DB
 {
     const USER = "admin";
@@ -9,8 +7,9 @@ class DB
     const HOST = "mysql";
     const DB = "mvc";
 
-    public static function cnnnToDB()
+    public static function connToDB()
     {
+
         $user = self::USER;
         $pass = self::PASS;
         $host = self::HOST;

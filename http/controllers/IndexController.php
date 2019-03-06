@@ -2,8 +2,7 @@
 
 class IndexController extends Controller
 {
-    private $pageTpl = '/views/main_tpl.php';
-
+    private $pageTpl = '/views/main.tpl.php';
 
     public function __construct()
     {
@@ -11,10 +10,12 @@ class IndexController extends Controller
         $this->view = new View();
     }
 
+
     public function index()
     {
         $this->pageData['title'] = "Students";
         $this->view->render($this->pageTpl, $this->pageData);
     }
-}
 
+
+}

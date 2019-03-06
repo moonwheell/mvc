@@ -8,9 +8,6 @@
     <title>Document</title>
 </head>
 <body>
-<?php echo '<pre>';
-var_dump($pageData);
-echo '</pre>';
-die; ?>
+<?php echo $pageData['title']; ?>
 </body>
 </html>
